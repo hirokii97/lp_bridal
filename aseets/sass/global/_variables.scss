@@ -8,10 +8,9 @@ $text-color-type1:#1A1A1A;// テキストカラー
 $text-color-type2:#FFFFFF;// テキストカラー
 $text-background-type1:#FFFFFF;// テキストカラー
 
-//フォント
-$ff-en: "Fira Sans" , sans-serif;//英字
-$ff-en-title: "Roboto" , sans-serif;//英字(タイトル)
-$ff-base: "Noto Sans JP" , sans-serif;//日本語標準
+/* フォント */
+
+$ff-base: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;//日本語標準
 $fz-base: 16px; // ベースフォントサイズ
 $fw-base: 500; // ベースフォントウェイト
 $lh-base: 1.6; // ベース行間

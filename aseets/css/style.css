@@ -1,3 +1,4 @@
+@charset "UTF-8";
 *,
 *::before,
 *::after {
@@ -75,15 +76,28 @@ a {
   text-decoration: none;
 }
 
+/* フォント */
 body {
   color: #1A1A1A;
-  font-family: "Noto Sans JP", sans-serif;
+  font-family: "Yu Gothic Medium", "游ゴシック Medium", YuGothic, "游ゴシック体", "ヒラギノ角ゴ Pro W3", "メイリオ", sans-serif;
   font-size: 16px;
   font-weight: 500;
   line-height: 1.6;
 }
 body a {
   transition: all 0.5s 0s ease;
+}
+
+.ja-font {
+  font-family: "Kiwi Maru", YuGothic, "游ゴシック", sans-serif;
+}
+
+.number-font {
+  font-family: "Avenir", sans-serif;
+}
+
+.title-font {
+  font-family: "Tsukushi B Round Gothic", sans-serif;
 }
 
 img {

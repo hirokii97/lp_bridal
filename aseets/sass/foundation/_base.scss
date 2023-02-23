@@ -2,6 +2,7 @@
 
 body {
   color: global.$text-color-type1;
+  //フォント（標準）
   font-family: global.$ff-base;
   font-size: global.$fz-base;
   font-weight: global.$fw-base;
@@ -10,8 +11,20 @@ body {
   a{
     transition: all 0.5s 0s ease;
   }
-
 }
+
+//フォント（その他）
+.ja-font {
+  font-family: "Kiwi Maru", YuGothic, "游ゴシック", sans-serif;
+}
+.number-font {
+  font-family:"Avenir", sans-serif;
+}
+
+.title-font{
+  font-family:"Tsukushi B Round Gothic", sans-serif;
+}
+
 
 img {
   max-width: 100%;
