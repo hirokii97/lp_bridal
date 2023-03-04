@@ -211,7 +211,8 @@ a {
 }
 
 .header__menu__box {
-  display: flex;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
   justify-content: space-around;
 }
 @media screen and (max-width: 768px) {
@@ -243,7 +244,6 @@ a {
 
 .header__menu__login__box {
   max-width: 650px;
-  margin: 0 auto;
 }
 
 .header__menu__login {

@@ -1,16 +1,16 @@
 @use "../global" as global;
 
-.header__menu{
+.header__menu {
   background: global.$main-light-color;
   padding: 30px;
-  
+
   @include global.mq('sp') {
     padding: 10px;
     height: 554px;
   }
 }
 
-.header__menu__wrapper{
+.header__menu__wrapper {
   background: global.$background-type-color;
   height: 800px;
   position: relative;
@@ -20,90 +20,89 @@
   }
 }
 
-.header__menu__icon{
+.header__menu__icon {
   @include global.mq('sp') {
     display: block;
     height: 54px;
   }
-  
-  img{
+
+  img {
     @include global.mq('sp') {
-  margin: 0 auto;
-  display: block;
-  height: 80px;
-  }
-  }
-}
-
-.header__menu__boxes{
-max-width: 1036px;
-margin: 112px auto 0 auto;
-padding: 10px 20px;
-
-@include global.mq('sp') {
-  margin: 0px auto 0 auto;
-  padding: 0px;
+      margin: 0 auto;
+      display: block;
+      height: 80px;
+    }
   }
 }
 
-.header__menu__box{
-display: flex;
-justify-content: space-around;
-// gap: 393px;
+.header__menu__boxes {
+  max-width: 1036px;
+  margin: 112px auto 0 auto;
+  padding: 10px 20px;
 
-@include global.mq('sp') {
-  display: block;
-  max-width: 198px;
-  margin: 0 auto;
-}
+  @include global.mq('sp') {
+    margin: 0px auto 0 auto;
+    padding: 0px;
+  }
 }
 
-.header__menu__lists{
-  // width: 264px;
+.header__menu__box {
+  // display: flex;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  justify-content: space-around;
+  // gap: 393px;
+
+  @include global.mq('sp') {
+    display: block;
+    max-width: 198px;
+    margin: 0 auto;
+  }
+}
+
+.header__menu__lists {
   font-size: 24px;
 
   @include global.mq('sp') {
-  font-size: 18px;
+    font-size: 18px;
   }
 }
 
-.header__menu__list{
+.header__menu__list {
   display: block;
-  // width: 264px;
   margin-top: 32px;
-  
+
   @include global.mq('sp') {
     margin-top: 24px;
-    }
+  }
 
 }
 
 //ログイン
-.header__menu__login__box{
-max-width:650px;
-margin: 0 auto;
+.header__menu__login__box {
+  max-width: 650px;
 }
 
-.header__menu__login{
-max-width: 217px;
-margin-top: 32px;
+.header__menu__login {
+  max-width: 217px;
+  margin-top: 32px;
 
-@include global.mq('sp') {
-  max-width: 195px;
-  margin: 46px auto 0px auto;
-}
+  @include global.mq('sp') {
+    max-width: 195px;
+    margin: 46px auto 0px auto;
+  }
 }
 
-.header__menu__login__txt{
+.header__menu__login__txt {
   font-size: 24px;
 
   @include global.mq('sp') {
-  font-size: 18px;
+    font-size: 18px;
   }
 }
 
 //中央の縦線（PCのみ）
-.header__menu__bar{
+.header__menu__bar {
   position: absolute;
   width: 1px;
   height: 546px;
@@ -113,7 +112,7 @@ margin-top: 32px;
 }
 
 //縦線下の上矢印
-.header__menu__upbar{
+.header__menu__upbar {
   width: 20px;
   height: 20px;
   border-top: 1px solid global.$text-color-type1;
@@ -122,30 +121,30 @@ margin-top: 32px;
   position: absolute;
   left: 50%;
   bottom: 5px;
-  transform: translate(-50%,0) rotate(-45deg);
+  transform: translate(-50%, 0) rotate(-45deg);
 }
 
-.header__menu__foot__lists{
+.header__menu__foot__lists {
   display: flex;
   justify-content: flex-end;
   margin-top: 208px;
-  
+
   @include global.mq('sp') {
     margin-top: 17px;
-    justify-content:center
+    justify-content: center
   }
 }
 
-.header__menu__foot__item{
+.header__menu__foot__item {
   font-size: 18px;
   margin-left: 24px;
-  
+
   @include global.mq('sp') {
     font-size: 14px;
     margin-left: 16px;
   }
 }
 
-.header__menu__foot__item:nth-child(1){
+.header__menu__foot__item:nth-child(1) {
   margin-left: 0px;
 }
