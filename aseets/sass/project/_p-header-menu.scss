@@ -1,12 +1,18 @@
 @use "../global" as global;
 
 .header__menu {
+  display: none;
   background: global.$main-light-color;
   padding: 30px;
 
   @include global.mq('sp') {
     padding: 10px;
     height: 554px;
+  }
+
+  //メニューバーが押されたら表示
+  &.active{
+    display: block;
   }
 }
 
