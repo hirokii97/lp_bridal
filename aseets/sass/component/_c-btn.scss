@@ -1,0 +1,67 @@
+@use "../global" as global;
+
+//ボタン全体
+.c-btn{
+  background-color: global.$text-color-type1;
+  padding: 16px 24px;
+  color: global.$background-type-color;
+  display: flex;
+  justify-content: space-between;
+  border: 1px global.$background-type-color solid;
+
+
+  &:hover {
+    background-color: global.$background-type-color;
+    border: 1px global.$text-color-type1 solid;
+    
+    //ログイン（ホバー時）
+    .c-btn-item{
+      color: global.$text-color-type1;
+    }
+    //矢印（ホバー時）
+    .c-btn__line{
+      border-bottom: 1px global.$text-color-type1 solid;
+      
+      &::after{
+        border: 1px global.$text-color-type1 solid;
+      }
+    }
+  }
+}
+
+//ボタン中身
+.c-btn-item{
+  display: inline;
+  color: global.$background-type-color;
+  
+  &:hover {
+    color: global.$text-color-type1;
+  }
+}
+
+//ボタン矢印
+.c-btn__line{
+color: #FFFFFF;
+position: relative;
+width: 27px;
+
+//文字と高さを合わせる
+height: 20px;
+border-bottom: 1px global.$background-type-color solid;
+
+@include global.mq('sp') {
+  height: 15px;
+
+}
+
+&::after{
+  position: absolute;
+  bottom: 1.59px;
+  right: 0px;
+  content: "";
+  width: 11.72px;
+  height: 0px;
+  border: 1px solid #FFFFFF;
+  transform: rotate( 30deg );
+}
+}

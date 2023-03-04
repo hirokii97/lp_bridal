@@ -1,0 +1,9 @@
+@use "../global" as global;
+
+.is-sp{
+  display: none;
+  
+  @include global.mq('sp') {
+    display: block;
+  }
+}
